@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Donate View Controller-->
+        <scene sceneID="jvY-RR-SrW">
+            <objects>
+                <viewController storyboardIdentifier="DonateViewController" id="onT-nT-mHt" customClass="DonateViewController" customModule="YardSale" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Gt1-RF-uue"/>
+                        <viewControllerLayoutGuide type="bottom" id="tNw-xv-EoW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tAu-Ld-oYn" customClass="ADBannerView">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1yU-vl-JR0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3410.4000000000001" y="-109.29535232383809"/>
+        </scene>
+        <!--Data Source-->
+        <scene sceneID="woc-JV-vHt">
+            <objects>
+                <viewController storyboardIdentifier="OnboardingViewController" id="3vX-xR-rLj" customClass="OnboardingViewController" customModule="YardSale" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="kQ9-3Q-EOs"/>
+                        <viewControllerLayoutGuide type="bottom" id="pJp-qt-v2p"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fyz-tH-Cyg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k9b-3Y-xeB" userLabel="Onboarding" customClass="PaperOnboarding" customModule="paper_onboarding">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.2872858942" green="0.14020672440000001" blue="0.30659055709999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="3vX-xR-rLj" id="cBE-wA-Ygl"/>
+                                    <outlet property="delegate" destination="3vX-xR-rLj" id="h5q-Je-rQO"/>
+                                </connections>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="k9b-3Y-xeB" firstAttribute="top" secondItem="fyz-tH-Cyg" secondAttribute="top" id="0lz-aX-wLQ"/>
+                            <constraint firstItem="k9b-3Y-xeB" firstAttribute="leading" secondItem="fyz-tH-Cyg" secondAttribute="leading" id="93m-eq-eO7"/>
+                            <constraint firstItem="pJp-qt-v2p" firstAttribute="top" secondItem="k9b-3Y-xeB" secondAttribute="bottom" id="TPQ-Uu-qdk"/>
+                            <constraint firstAttribute="trailing" secondItem="k9b-3Y-xeB" secondAttribute="trailing" id="dmC-PX-X6e"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yuf-Pk-0rX" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4404" y="-109"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E1K-hT-Q86">
+            <objects>
+                <viewController storyboardIdentifier="VRViewController" id="eSq-gA-xcG" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="TGn-tM-cBU"/>
+                        <viewControllerLayoutGuide type="bottom" id="3W5-MT-yLG"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="U60-AG-mVS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="N6R-qV-Ym2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="N6R-qV-Ym2" secondAttribute="trailing" id="9Pd-fF-SQ3"/>
+                            <constraint firstItem="N6R-qV-Ym2" firstAttribute="leading" secondItem="U60-AG-mVS" secondAttribute="leading" id="MkB-iQ-vuV"/>
+                            <constraint firstItem="N6R-qV-Ym2" firstAttribute="top" secondItem="TGn-tM-cBU" secondAttribute="bottom" id="e6m-Wm-zJQ"/>
+                            <constraint firstItem="3W5-MT-yLG" firstAttribute="top" secondItem="N6R-qV-Ym2" secondAttribute="bottom" id="zxM-fp-DVy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="N6R-qV-Ym2" id="fV3-zZ-mMT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zut-3j-Tgi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3433" y="612"/>
+        </scene>
+    </scenes>
+</document>
