@@ -23,6 +23,7 @@ pod 'ImagePicker'
 pod 'Firebase/Storage'
 pod 'AsyncSwift'
 pod 'Firebase/Core'
+pod 'SwiftyFORM'
 
 
 end
