@@ -9,7 +9,7 @@ The app is designed for simplicity, and easy uploading and viewing of donations.
 
 ## Screen Shots
 ### Login
-![img_1104](https://raw.githubusercontent.com/madmann8/images-/master/Simulator%20Screen%20Shot%20Feb%2019%2C%202017%2C%202.03.24%20PM.png)
+![img_1104](https://raw.githubusercontent.com/madmann8/images-/master/86f9f8aa-f562-11e6-9002-2eec11871dfd.png)
 
 ### Home
 ![img_1105](https://cloud.githubusercontent.com/assets/17242119/23090058/92f11c10-f562-11e6-9bb8-d360328eea1f.PNG)
