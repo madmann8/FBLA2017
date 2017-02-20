@@ -39,7 +39,7 @@ Once Cocoa Pods are installed, simply run "Pod update" in the root folder of the
 
 In order to run the app, open YardSale.xcworkspace, select a simulator (iPhone 7 plus is ideal),and press the run button. 
 
-If there are issues with running the app, the app can be downloaded from the App Store **[Hwre](fbla2017.tk)**
+If there are issues with running the app, the app can be downloaded from the App Store **[Here](fbla2017.tk)**
 
 ## Backend
 
