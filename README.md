@@ -9,7 +9,7 @@ The app is designed for simplicity, and easy uploading and viewing of donations.
 
 ## Screen Shots
 ### Login
-![img_1104](https://cloud.githubusercontent.com/assets/17242119/23090057/86f9f8aa-f562-11e6-9002-2eec11871dfd.PNG)
+![img_1104](https://raw.githubusercontent.com/madmann8/images-/master/Simulator%20Screen%20Shot%20Feb%2019%2C%202017%2C%202.03.24%20PM.png)
 
 ### Home
 ![img_1105](https://cloud.githubusercontent.com/assets/17242119/23090058/92f11c10-f562-11e6-9bb8-d360328eea1f.PNG)
@@ -38,6 +38,8 @@ This project is reliant on **[CocoaPods](https://cocoapods.org/)** for external 
 Once Cocoa Pods are installed, simply run "Pod update" in the root folder of the project.
 
 In order to run the app, open YardSale.xcworkspace, select a simulator (iPhone 7 plus is ideal),and press the run button. 
+
+If there are issues with running the app, the app can be downloaded from the App Store **[Hre](fbla2017.tk)**
 
 ## Backend
 
